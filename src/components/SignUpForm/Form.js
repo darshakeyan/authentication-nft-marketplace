@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { loginFields } from "../mock/Fields";
-import Input from "./Input";
-import FormExtra from "./FormExtra";
-import FormAction from "./FormAction";
-import FormService from "./FormService";
+import { signupFields } from "../../mock/Fields";
+import Input from "../Input";
+import FormExtra from "../Common/FormExtra";
+import FormAction from "../Common/FormAction";
+import FormService from "../Common/FormService";
 
-const fields = loginFields;
+const fields = signupFields;
 let fieldsState = {};
 fields.forEach((field) => (fieldsState[field.id] = ""));
 
@@ -22,8 +22,8 @@ const Form = () => {
   };
   return (
     <>
-      <form className="mt-8 space-y-6">
-        <div className="-space-y-px">
+      <form className="space-y-6">
+        <div className="">
           {fields.map((field) => (
             <Input
               key={field.id}
@@ -39,10 +39,9 @@ const Form = () => {
             />
           ))}
         </div>
-        <FormExtra />
-        <FormAction handleSubmit={handleSubmit} text="Login" />
+        <FormAction handleSubmit={handleSubmit} text="Sign Up" />
       </form>
-      <FormService />
+      <FormService text="Sign Up" />
     </>
   );
 };

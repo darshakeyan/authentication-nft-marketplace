@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-const FormService = () => {
+
+const FormService = ({text}) => {
   return (
     <>
       <div className="w-full text-center my-3">
         <span className="">OR</span>
       </div>
-      <div className="-mt-1 font-bold mb-5">Log in using</div>
+      <div className="-mt-1 font-bold mb-5">{text} using</div>
       <div className="auth-social flex my-2 w-full mr-2">
         <div className="mr-12 max-w-5">
           <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc3MzI2MDUwLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">
