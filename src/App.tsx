@@ -4,8 +4,8 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import LoginScreen from "./components/LoginForm/LoginScreen";
-import SignUp from "./components/SignUpForm/SignupScreen";
+import LoginScreen from "./pages/LoginScreen";
+import SignUp from "./pages/SignupScreen";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-import ImageBackground from "../Image";
-import Header from "../Common/Header";
-import Form from "./Form";
+import ImageBackground from "../components/Image";
+import Form from "../components/Form/LoginForm/Form";
+import Header from "../components/Form/Header";
 
 const LoginScreen = () => {
   return (

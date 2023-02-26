@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { loginFields } from "../../mock/Fields";
-import Input from "../Input";
-import FormExtra from "../Common/FormExtra";
-import FormAction from "../Common/FormAction";
-import FormService from "../Common/FormService";
+import { loginFields } from "../../../mock/Fields";
+import Input from "../../Input";
+import FormExtra from "../FormExtra";
+import FormAction from "../FormAction";
+import FormService from "../FormService";
 
 const fields = loginFields;
 let fieldsState = {};
